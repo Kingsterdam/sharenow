@@ -10,8 +10,7 @@ connectDB();
 
 //template engine
 const corsOptions = {
-    origin: process.env.ALLOWED_CLIENTS.split(',');
-
+    origin: process.env.ALLOWED_CLIENT.split(',')
 }
 app.use(cors(corsOptions));
 app.set('views', path.join(__dirname, '/views'));
